@@ -40,8 +40,6 @@ or
 
     { "username": "blah", "password": "ABCDEF" }
 
-Note that you can only use the token once my [pull request](https://github.com/frozzare/node-pinboard/pull/2) to node-pinboard gets accepted.
-
 Run
 ---
 
