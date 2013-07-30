@@ -9,7 +9,9 @@ Supported:
 
 - t.co
 - bit.ly
-
+- goo.gl
+- tinyurl.com
+- is.gd
 
 Setup
 ----
