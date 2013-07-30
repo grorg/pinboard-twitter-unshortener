@@ -38,5 +38,10 @@ or
 
     { "username": "blah", "password": "ABCDEF" }
 
-Note that you can only use the token once my pull request to node-pinboard gets accepted.
+Note that you can only use the token once my [pull request](https://github.com/frozzare/node-pinboard/pull/2) to node-pinboard gets accepted.
 
+Run
+---
+
+Then just run the script by itself. It will look at the most recent 50 links on your pinboard, find any
+that match the shortening services, and then try to expand them to full urls.
