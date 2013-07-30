@@ -24,11 +24,19 @@ and [async](https://github.com/caolan/async) (we don't want to bombard pinboard'
 
     npm install async
 
-Tweak
+Configure
 -----
 
-Edit the file to include your username and password. Then run with a number of recent links to examine.
+You'll need a JSON file in your home directory with your Pinboard username and password, or API
+token: ~/.pinboard.json.
 
+For example:
 
+    { "token": "blah:123456789ABCEDF" }
 
+or
+
+    { "username": "blah", "password": "ABCDEF" }
+
+Note that you can only use the token once my pull request to node-pinboard gets accepted.
 
