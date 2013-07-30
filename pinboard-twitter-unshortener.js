@@ -1,11 +1,20 @@
 #!/usr/bin/env node
 
-const NUM_RECENT = 50;
-const SHORTENERS = ["t.co", "bit.ly"];
+// Unshortens/deshortens/lengthens urls in your pinboard account. Simply
+// put API token or username/password info into ~/.pinboard.json. For
+// example:
+//   { "token": "blah:123456789ABCEDF" }
+// or:
+//   { "username": "blah", "password": "ABCDEF" }
+// Adjust NUM_RECENT below to check more/less bookmarks.
 
+var pinboard_config = require(process.env.HOME + "/.pinboard.json");
 var http = require("http");
 var pinboard = require("pinboard");
 var async = require("async");
+
+const NUM_RECENT = 10;
+const SHORTENERS = ["t.co", "bit.ly"];
 
 function isShortenedURL(url) {
     for (var i = 0; i < SHORTENERS.length; i++) {
@@ -65,8 +74,9 @@ function testAndUpdatePosts(posts) {
 }
 
 pinboard.config({
-    username: "xxxxx",
-    password: "xxxxx"
+    token: pinboard_config.token,
+    username: pinboard_config.username,
+    password: pinboard_config.password
 });
 
 pinboard.get("posts/recent", { count: NUM_RECENT }, function (data) {
