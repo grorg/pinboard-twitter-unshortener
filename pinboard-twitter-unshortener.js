@@ -14,7 +14,7 @@ var pinboard = require("pinboard");
 var async = require("async");
 
 const NUM_RECENT = 50;
-const SHORTENERS = ["t.co", "bit.ly", "goo.gl", "tinyurl.com", "is.gd"];
+const SHORTENERS = ["t.co", "bit.ly", "goo.gl", "tinyurl.com", "is.gd", "ow.ly"];
 
 function isShortenedURL(url) {
     for (var i = 0; i < SHORTENERS.length; i++) {

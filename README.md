@@ -12,6 +12,7 @@ Supported:
 - goo.gl
 - tinyurl.com
 - is.gd
+- ow.ly
 
 Setup
 ----
