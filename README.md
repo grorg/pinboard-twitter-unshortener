@@ -13,6 +13,7 @@ Supported:
 - tinyurl.com
 - is.gd
 - ow.ly
+- tcrn.ch
 
 Setup
 ----
