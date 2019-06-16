@@ -5,6 +5,8 @@ I originally called this the "pinboard twitter link de-crappifier". When I save 
 from Tweetbot, it saves the shortened (and tracked) t.co style URLs. This script will
 go through your pinboard links and expand any such URLs into their redirected and original result.
 
+NOTE: This is so old that it doesn't set up dependencies, etc. You shouldn't use it.
+
 Supported:
 
 - t.co
